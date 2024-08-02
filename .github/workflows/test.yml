@@ -19,7 +19,7 @@ jobs:
         with:
           tilesize: "128"
           work-directory: "test"
-          pak-path: "../"
+          pak-path: "../test.pak"
 
       - name: "Check directory"
         shell: "bash"
