@@ -19,4 +19,4 @@ jobs:
 
       - name: "Check directory"
         shell: "bash"
-        run: "ll"
+        run: "ls -l"
