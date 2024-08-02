@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: "test"
+        shell: "bash"
+        run: "echo \"test\""
+
       - name: "Checkout"
         uses: "actions/checkout@master"
 
