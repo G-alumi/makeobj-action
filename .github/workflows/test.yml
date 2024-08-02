@@ -9,7 +9,11 @@ jobs:
     steps:
       - name: "test"
         shell: "bash"
-        run: "ls -l; ls -l test"
+        run: "ls -l"
+
+      - name: "test2"
+        shell: "bash"
+        run: "ls -l test"
 
       - name: "Checkout"
         uses: "actions/checkout@master"
