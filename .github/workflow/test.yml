@@ -1,0 +1,13 @@
+name: test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Test makeobj-action"
+        uses: G-alumi/makeobj-action
+
+      - name: "Check directory"
