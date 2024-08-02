@@ -2,6 +2,11 @@ name: "makeobj"
 author: "G_alumi"
 description: "Generate simutrans pak files with makeobj"
 inputs:
+  work-directory:
+    description: "Directory to execute makeobj"
+    default: ""
+    required: false
+
   tilesize:
     description: "Specify tile size (128, etc.)"
     default: ""
@@ -24,9 +29,13 @@ runs:
       shell: "bash"
       run: "sudo apt-get install simutrans-makeobj"
 
+    - name: "Change directory"
+      shell: "bash"
+      run: "cd ${{ inputs.work-directory }}"
+
     - name: "Execute makeobj"
       shell: "bash"
-      run: "makeobj"
+      run: "makeobj pak${{ inputs.tilesize }} ${{ inputs.pak-path }} ${{ inputs.dat-path }}"
     
   
   

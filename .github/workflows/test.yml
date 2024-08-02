@@ -16,6 +16,8 @@ jobs:
 
       - name: "Test makeobj-action"
         uses: "G-alumi/makeobj-action@main"
+        with:
+          tilesize: "128"
 
       - name: "Check directory"
         shell: "bash"
