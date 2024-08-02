@@ -1,4 +1,4 @@
-name: "makeobj"
+name: "Execute makeobj"
 author: "G_alumi"
 description: "Generate simutrans pak files with makeobj"
 branding:
