@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: "Checkout"
+        uses: "actions/checkout@master"
+
       - name: "test"
         shell: "bash"
         run: "ls -l"
@@ -14,9 +17,6 @@ jobs:
       - name: "test2"
         shell: "bash"
         run: "ls -l test"
-
-      - name: "Checkout"
-        uses: "actions/checkout@master"
 
       - name: "Test makeobj-action"
         uses: "G-alumi/makeobj-action@main"
