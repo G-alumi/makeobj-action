@@ -29,13 +29,11 @@ runs:
       shell: "bash"
       run: "sudo apt-get install simutrans-makeobj"
 
-    - name: "Change directory"
-      shell: "bash"
-      run: "cd ${{ inputs.work-directory }}"
-
     - name: "Execute makeobj"
       shell: "bash"
-      run: "makeobj pak${{ inputs.tilesize }} ${{ inputs.pak-path }} ${{ inputs.dat-path }}"
+      run: "
+        cd ${{ inputs.work-directory }};
+        makeobj pak${{ inputs.tilesize }} ${{ inputs.pak-path }} ${{ inputs.dat-path }}"
     
   
   
