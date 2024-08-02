@@ -25,6 +25,6 @@ jobs:
           work-directory: "test"
           pak-path: "../test.pak"
 
-      - name: "Check directory"
+      - name: "Check pakfile"
         shell: "bash"
-        run: "ls -l"
+        run: "makeobj list *.pak"
