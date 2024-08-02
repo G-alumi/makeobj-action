@@ -18,6 +18,8 @@ jobs:
         uses: "G-alumi/makeobj-action@main"
         with:
           tilesize: "128"
+          work-directory: "test"
+          pak-path: "../"
 
       - name: "Check directory"
         shell: "bash"
