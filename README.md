@@ -29,15 +29,15 @@ jobs:
     permissions:
       contents: write
 
-	- name: Checkout
+  - name: Checkout
       uses: actions/checkout@v3
 
-	- name: Create pak
-     uses: G-alumi/makeobj-action@v1
+  - name: Create pak
+      uses: G-alumi/makeobj-action@v1
       with: 
-	  	work-directory: src
-	    tilesize: 128
-		pak-path: ../vehicle.testcar.pak
+      work-directory: src
+      tilesize: 128
+    pak-path: ../vehicle.testcar.pak
 ```
 
 ## note
