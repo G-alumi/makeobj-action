@@ -1,0 +1,32 @@
+name: "makeobj"
+author: "G_alumi"
+description: "Generate simutrans pak files with makeobj"
+inputs:
+  tilesize:
+    description: "Specify tile size (128, etc.)"
+    default: ""
+    required: false
+
+  dat-path:
+    description: "Specify dat path"
+    default: ""
+    required: false
+
+  pak-path:
+    description: "Specify pak path (default is output.pak)"
+    default: "output.pak"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Install makeobj"
+      shell: "bash"
+      run: "sudo aptitude install simutrans-makeobj"
+
+    - name: "Execute makeobj"
+      shell: "bash"
+      run: "makeobj"
+    
+  
+  
