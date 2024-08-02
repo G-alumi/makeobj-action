@@ -14,8 +14,8 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@master"
 
-      # - name: "Test makeobj-action"
-      #   uses: "G-alumi/makeobj-action"
+      - name: "Test makeobj-action"
+        uses: "G-alumi/makeobj-action@main"
 
       - name: "Check directory"
         shell: "bash"
