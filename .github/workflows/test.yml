@@ -11,4 +11,5 @@ jobs:
         uses: G-alumi/makeobj-action
 
       - name: "Check directory"
+        shell: "bash"
         run: "ll"
