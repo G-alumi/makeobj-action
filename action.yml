@@ -22,7 +22,7 @@ runs:
   steps:
     - name: "Install makeobj"
       shell: "bash"
-      run: "sudo aptitude install simutrans-makeobj"
+      run: "sudo apt-get install simutrans-makeobj"
 
     - name: "Execute makeobj"
       shell: "bash"
