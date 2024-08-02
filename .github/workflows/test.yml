@@ -10,14 +10,6 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@master"
 
-      - name: "test"
-        shell: "bash"
-        run: "ls -l"
-
-      - name: "test2"
-        shell: "bash"
-        run: "ls -l test"
-
       - name: "Test makeobj-action"
         uses: "G-alumi/makeobj-action@main"
         with:

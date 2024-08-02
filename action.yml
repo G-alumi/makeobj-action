@@ -1,6 +1,10 @@
 name: "makeobj"
 author: "G_alumi"
 description: "Generate simutrans pak files with makeobj"
+branding:
+  icon: "truck"
+  color: "green"
+
 inputs:
   work-directory:
     description: "Directory to execute makeobj"
