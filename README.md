@@ -37,7 +37,7 @@ jobs:
       with: 
       work-directory: src
       tilesize: 128
-    pak-path: ../vehicle.testcar.pak
+      pak-path: ../vehicle.testcar.pak
 ```
 
 ## note
