@@ -35,9 +35,9 @@ jobs:
   - name: Create pak
       uses: G-alumi/makeobj-action@v1
       with: 
-      work-directory: src
-      tilesize: 128
-      pak-path: ../vehicle.testcar.pak
+        work-directory: src
+        tilesize: 128
+        pak-path: ../vehicle.testcar.pak
 ```
 
 ## note
